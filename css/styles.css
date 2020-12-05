@@ -2182,7 +2182,7 @@ a:hover.back-to-top {
 	}
 	
 	.accordion .area-2 {
-		width: 50%;
+		width: 100%;
 		height: 100%;
 		display: inline-block;
 		vertical-align: top;
@@ -2364,7 +2364,7 @@ a:hover.back-to-top {
 
 	/* Details 1 */
 	.accordion .accordion-container {
-		max-width: 28rem;
+		/* max-width: 28rem; */
 		margin-left: 5rem;
 	}
 	/* end of details 1 */
