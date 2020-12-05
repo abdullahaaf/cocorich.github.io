@@ -1131,7 +1131,7 @@ input[type='checkbox'] {
 }
 
 .tabs #tab-1 .progress-bar {
-	display: block;
+	/* display: block; */
 	padding-left: 1.5rem;
 	border-radius: 0.125rem;
 	background: linear-gradient(to bottom right, #14bf98, #1bd1a7);
@@ -2181,16 +2181,10 @@ a:hover.back-to-top {
 	}
 
 	.tabs .area-1 {
-		width: 50%;
+		width: 100%;
 		height: 100%;
 		display: inline-block;
 		vertical-align: top;
-	}
-
-	.tabs .area-2 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
 	}
 
 	.tabs .tabs-container {
