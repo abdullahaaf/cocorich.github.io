@@ -2485,3 +2485,21 @@ a:hover.back-to-top {
 	/* end of navigation */
 }
 /* end of min-width width 1200px */
+
+
+#pills-tab a{
+	text-decoration: none;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	background-color: #cfb18d;
+}
+#pills-tab li a {
+	display: block;
+	border: 1px solid #9a7344;
+}
+#pills-tab>.nav-item{
+	padding: 5px;
+}
+.icon-spec img{
+	width: 30%;
+}
