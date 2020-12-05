@@ -49,6 +49,30 @@ Colors:
 RESPONSIVE MAP
 ************************** */
 
+#progress .progress-bar {
+	/* display: block; */
+	padding-left: 1.5rem;
+	border-radius: 0.125rem;
+	background: linear-gradient(to bottom right, #14bf98, #1bd1a7);
+}
+
+.progress-container {
+	margin-top: 1.5rem;
+}
+
+.progress-container .title {
+	margin-bottom: 0.25rem;
+	color: #484a46;
+	font: 600 0.875rem/1.25rem "Open Sans", sans-serif;
+}
+
+.progress {
+	height: 1.375rem;
+	margin-bottom: 1.125rem;
+	border-radius: 0.125rem;
+	background-color: #f9fafc;
+}
+
 .map-responsive{
     overflow:hidden;
     padding-bottom:50%;
@@ -676,7 +700,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 7.0625rem;
+	/* width: 7.0625rem; */
+	width: 11rem;
 	height: 2rem;
 	-webkit-backface-visibility: hidden;
 }

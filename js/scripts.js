@@ -107,7 +107,8 @@
     var $grid = $('.grid').isotope({
         // options
         itemSelector: '.element-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '.product'
     });
     
     // filter items on button click
