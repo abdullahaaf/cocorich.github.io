@@ -345,7 +345,7 @@
     /* Back To Top Button */
     // create the back to top button
     $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
-    $('body').prepend('<a href="https://web.whatsapp.com/send?phone=6281217705200&text=Hi%20Cocorich%20Indonesia,%20I%20want%20to%20ask%20questions%20and%20get%20more%20information%20from%20your%20company%27s%20products." class="to-wa">Whatsapp</a>');
+    $('body').prepend('<a href="https://wa.me/6281217705200?text=Hi%20Cocorich%20Indonesia,%20I%20want%20to%20ask%20questions%20and%20get%20more%20information%20from%20your%20company%27s%20products." class="to-wa">Whatsapp</a>');
     var amountScrolled = 700;
     $(window).scroll(function() {
         if ($(window).scrollTop() > amountScrolled) {
