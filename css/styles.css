@@ -691,7 +691,8 @@ input[type='checkbox'] {
 .navbar-custom {
 	padding-top: 0.375rem;
 	padding-bottom: 0.375rem;
-	background-color: #113448;
+	/* background-color: #113448; */
+	background-color: #0B2161;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
 	transition: all 0.2s;
@@ -758,7 +759,8 @@ input[type='checkbox'] {
 	margin-top: 0;
 	border: none;
 	border-radius: 0.25rem;
-	background-color: #113448;
+	/* background-color: #113448; */
+	background-color: #0B2161;
 }
 
 .navbar-custom .dropdown-item {
@@ -1768,7 +1770,8 @@ input[type='checkbox'] {
 /**********************/
 .footer {
 	padding-top: 5rem;
-	background-color: #113448;
+	/* background-color: #113448; */
+	background-color: #0B2161;
 }
 
 .footer .text-container {
@@ -1793,7 +1796,8 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
-	background-color: #113448;
+	/* background-color: #113448; */
+	background-color: #0B2161;
 	text-align: center;
 }
 
@@ -1849,7 +1853,8 @@ a.to-wa {
 .ex-header {
 	padding-top: 8rem;
 	padding-bottom: 5rem;
-	background-color: #153e52;
+	/* background-color: #153e52; */
+	background-color: #0B2161;
 	text-align: center;
 }
 
