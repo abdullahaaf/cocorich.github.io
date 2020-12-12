@@ -359,6 +359,26 @@
 	/* Removes Long Focus On Buttons */
 	$(".button, a, button").mouseup(function() {
 		$(this).blur();
-	});
+    });
+    
+    $('#pills-profile-tab').on('click', function(){
+        var delay = 500;
+        $(".progress-bar").each(function(i) {
+            var widt_progress = $(this).attr('aria-valuenow');
+            $(this).delay(delay * i).animate({
+                width: widt_progress + '%'
+            }, delay);
+
+            $(this).prop('Counter', 0).animate({
+                Counter: widt_progress
+            }, {
+                duration: delay,
+                // easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now) + '%');
+                }
+            });
+        });
+    });
 
 })(jQuery);

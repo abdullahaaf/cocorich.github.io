@@ -51,7 +51,7 @@ RESPONSIVE MAP
 
 #progress .progress-bar {
 	/* display: block; */
-	padding-left: 1.5rem;
+	/* padding-left: 1.5rem; */
 	border-radius: 0.125rem;
 	/* background: linear-gradient(to bottom right, #14bf98, #1bd1a7); */
 	background: linear-gradient(to bottom right, #000000, #000000);
@@ -2575,4 +2575,10 @@ svg#svg239 path{
 	svg#svg239 path{
 		fill: #3e3e3e !important;
 	}
+}
+
+/* progress bar */
+.progress .progress-bar {
+	-webkit-transition: none !important;
+	transition: none !important;
 }
