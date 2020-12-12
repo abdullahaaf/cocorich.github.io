@@ -411,5 +411,25 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>
+        // animate background header corousel
+        var images=new Array(
+            'images/desainmocup.jpg',
+            'images/details-1-background.jpg',
+            'images/details-2-background.jpg'
+        );
+        var nextimage=0;
+        doSlideshow();
+        function doSlideshow(){
+            if(nextimage>=images.length){nextimage=0;}
+            $('.header').stop().animate({opacity: 0},1000,function(){
+                $(this).css({'background-image': 'url("'+images[nextimage++]+'")'})
+                    .animate({opacity: 1},{duration:1000})
+                    .fadeIn(1500,function(){
+                        setTimeout(doSlideshow,2500);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
