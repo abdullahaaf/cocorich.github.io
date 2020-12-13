@@ -402,6 +402,7 @@
     	
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
@@ -411,7 +412,7 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <script>
+    <!-- <script>
         // animate background header corousel
         var images=new Array(
             'images/desainmocup.jpg',
@@ -430,6 +431,17 @@
                     });
             });
         }
+    </script> -->
+
+    <script>
+        $(function(){
+            jQuery(document).ready(function() {
+            $('#header').backstretch([
+            "images/header-background.jpg", 
+            "images/details-1-background.jpg",
+                ],  {duration: 2000, fade: 750});
+            });
+        })
     </script>
 </body>
 </html>
