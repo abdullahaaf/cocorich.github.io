@@ -2577,6 +2577,13 @@ svg#svg239 path{
 	}
 }
 
+@media (max-width: 575px) {
+	.basic-1, .cards-2, .cards-1, .ex-basic-2 {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
 /* progress bar */
 .progress .progress-bar {
 	-webkit-transition: none !important;
