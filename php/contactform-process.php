@@ -19,13 +19,13 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-if (empty($_POST["terms"])) {
-    $errorMSG = "Terms is required ";
-} else {
-    $terms = $_POST["terms"];
-}
+// if (empty($_POST["terms"])) {
+//     $errorMSG = "Terms is required ";
+// } else {
+//     $terms = $_POST["terms"];
+// }
 
-$EmailTo = "yourname@domain.com";
+$EmailTo = "abdullahaaf1@gmail.com";
 $Subject = "New message from Aria landing page";
 
 // prepare email body text
@@ -39,9 +39,9 @@ $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
-$Body .= "Terms: ";
-$Body .= $terms;
-$Body .= "\n";
+// $Body .= "Terms: ";
+// $Body .= $terms;
+// $Body .= "\n";
 
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);

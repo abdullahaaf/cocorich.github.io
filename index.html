@@ -277,13 +277,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img class="img-fluid" src="images/services-1.jpg" alt="alternative">
+                    <img class="img-fluid" src="images/newimage/home-kiri.jpg" alt="alternative">
                 </div> <!-- end of col -->
                 <div class="col-lg-4 mt-3 mt-lg-0">
-                    <img class="img-fluid" src="images/services-2.jpg" alt="alternative">
+                    <img class="img-fluid" src="images/newimage/home-tengah.jpg" alt="alternative">
                 </div> <!-- end of col -->
                 <div class="col-lg-4 mt-3 mt-lg-0">
-                    <img class="img-fluid" src="images/services-2.jpg" alt="alternative">
+                    <img class="img-fluid" src="images/newimage/home-kanan.jpg" alt="alternative">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <br>
@@ -348,6 +348,11 @@
                                 <span class="social_instagram"></span>
                             </a>
                         </span>
+                        <span class="fa-stack">
+                            <a href="linkedin.com">
+                                <span class="social_linkedin"></span>
+                            </a>
+                        </span>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
@@ -361,7 +366,7 @@
                                 <a class="white" href="about.html">About The Company</a>
                             </li>
                             <li>
-                                <a class="white" href="privacy-policy.html">Our Business</a>
+                                <a class="white" href="product.html">Our Business</a>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -407,33 +412,13 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <!-- <script>
-        // animate background header corousel
-        var images=new Array(
-            'images/desainmocup.jpg',
-            'images/details-1-background.jpg',
-            'images/details-2-background.jpg'
-        );
-        var nextimage=0;
-        doSlideshow();
-        function doSlideshow(){
-            if(nextimage>=images.length){nextimage=0;}
-            $('.header').stop().animate({opacity: 0},1000,function(){
-                $(this).css({'background-image': 'url("'+images[nextimage++]+'")'})
-                    .animate({opacity: 1},{duration:1000})
-                    .fadeIn(1500,function(){
-                        setTimeout(doSlideshow,2500);
-                    });
-            });
-        }
-    </script> -->
 
     <script>
         $(function(){
             jQuery(document).ready(function() {
             $('#header').backstretch([
-            "images/header-background.jpg", 
-            "images/details-1-background.jpg",
+            "images/newimage/home-animasi-1.jpg", 
+            "images/newimage/home-animasi-2.jpg",
                 ],  {duration: 2000, fade: 750});
             });
         })
