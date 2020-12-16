@@ -15,13 +15,13 @@ function smtp_mail($to, $subject, $message, $from_name, $from, $cc, $bcc, $debug
   /* -------------------------- Konfigurasi Dasar SMTP ---------------------------------- */
   
   $mail->SMTPAuth 	= true;                        				
-  $mail->Host 		  = 'mail_new.andynovianto.com;101.50.1.15';  // Masukkan Server SMTP
+  $mail->Host 		  = 'mail.cocorichindo.com;101.50.1.10';  // Masukkan Server SMTP
   $mail->Port 		  = 587;                                      // Masukkan Port SMTP
   $mail->SMTPSecure = 'tls';                                    // Masukkan Pilihan Enkripsi ( `tls` atau `ssl` )
-  $mail->Username 	= 'sender@andynovianto.com';                // Masukkan Email yang digunakan selama proses pengiriman email via SMTP
-  $mail->Password 	= '@sender12';        						          // Masukkan Password dari Email tsb
-  $default_email_from       = 'sender@andynovianto.com';        // Masukkan default from pada email
-  $default_email_from_name  = 'Sender Email Testing';           // Masukkan default nama dari from pada email
+  $mail->Username 	= 'ask@cocorichindo.com';                // Masukkan Email yang digunakan selama proses pengiriman email via SMTP
+  $mail->Password 	= 'passwordcocorich';        						          // Masukkan Password dari Email tsb
+  $default_email_from       = 'ask@cocorichindo.com';        // Masukkan default from pada email
+  $default_email_from_name  = 'Marcella Darsono';           // Masukkan default nama dari from pada email
   
   /* -------------------------- Konfigurasi Dasar SMTP ---------------------------------- */
   
