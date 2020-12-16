@@ -37,7 +37,7 @@ $bodymessage = $message."<br><br>".$email;
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
-$mail->SMTPDebug = 3;                               
+$mail->SMTPDebug = 0;                               
 
 $mail->isSMTP();                                   
 
