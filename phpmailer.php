@@ -1,5 +1,7 @@
 <?php
-
+if (!isset($_POST["message"]) || !isset($_POST)) {
+    die('sorry bro, limited access! ');
+}
 require_once("/home/cocorich/public_html/phpmailer/src/PHPMailer.php");
 
 require_once("/home/cocorich/public_html/phpmailer/src/SMTP.php");
