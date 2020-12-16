@@ -241,11 +241,11 @@
                                 <label class="label-control" for="cemail">Email</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <!-- <div class="form-group">
+                            <div class="form-group">
                                 <input type="text" class="form-control-input"  id="csubject" required>
                                 <label class="label-control" for="csubject">Subject</label>
                                 <div class="help-block with-errors"></div>
-                            </div> -->
+                            </div>
                             <div class="form-group">
                                 <textarea class="form-control-textarea" id="cmessage"></textarea>
                                 <label class="label-control" for="cmessage">Your message</label>
@@ -367,13 +367,15 @@
     var form = document.getElementById('contactForm');
     var cname = document.getElementById('cname');
     var cemail = document.getElementById('cemail');
+    var csubject = document.getElementById('csubject');
     var cmessage = document.getElementById('cmessage');
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         var ecname = encodeURIComponent(cname.value);
         var ecemail = encodeURIComponent(cemail.value);
+        var ecsubject = encodeURIComponent(csubject.value);
         var ecmessage = encodeURIComponent(cmessage.value);
-        var ctemplate = `Name:%20${ecname}%0AEmail:%20${ecemail}%0AMessage:%20${ecmessage}`;
+        var ctemplate = `Name:%20${ecname}%0AEmail:%20${ecemail}%0ASubject:%20${ecsubject}%0AMessage:%20${ecmessage}`;
         url = 'https://wa.me/628991977077?text='+ctemplate;
         window.location = new URL(url);
     });
