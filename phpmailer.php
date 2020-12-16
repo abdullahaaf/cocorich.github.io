@@ -66,6 +66,8 @@ if(!$mail->send())
 } 
 else 
 {
-    echo "Message has been sent successfully";
+    echo "<div class='alert alert-success fade in'>"+
+    "<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> Pesan Alert Sukses"+
+    "</div>";
 }
 ?>
