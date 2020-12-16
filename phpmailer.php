@@ -33,7 +33,7 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-$bodymessage = $message."<br><br>".$name;
+$bodymessage = $message."<br><br>".$email;
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
@@ -52,7 +52,7 @@ $mail->Password = "passwordcocorich";
 $mail->SMTPSecure = "tls";                           
 $mail->Port = 587;                                   
 $mail->From = "ask@cocorichindo.com";
-$mail->FromName = $email;
+$mail->FromName = $name;
 $mail->addAddress("info@cocorichindo.com", "Marcella Dharsono");
 $mail->isHTML(true);
 $mail->Subject = $subject;
