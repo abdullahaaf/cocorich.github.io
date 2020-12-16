@@ -243,14 +243,15 @@
 
     function csubmitForm() {
         // initiate variables with form content
-		var name = $("#cname").val();
+        var name = $("#cname").val();
+        var email = $("#cemail").val();
 		var subject = $("#csubject").val();
         var message = $("#cmessage").val();
         // var terms = $("#cterms").val();
         $.ajax({
             type: "POST",
             url: "phpmailer.php",
-            data: "name=" + name + "&subject=" + subject + "&message=" + message, 
+            data: "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message, 
             success: function(text) {
                 if (text == "success") {
                     cformSuccess();

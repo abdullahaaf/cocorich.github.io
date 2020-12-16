@@ -15,6 +15,12 @@ if (empty($_POST["name"])) {
     $name = $_POST["name"];
 }
 
+if (empty($_POST["email"])) {
+    $errorMSG = "Email is required ";
+} else {
+    $email = $_POST["email"];
+}
+
 if (empty($_POST["subject"])) {
     $errorMSG = "Subject is required ";
 } else {
@@ -26,6 +32,8 @@ if (empty($_POST["message"])) {
 } else {
     $message = $_POST["message"];
 }
+
+$bodymessage = $message."<br><br>".$name;
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
@@ -44,11 +52,11 @@ $mail->Password = "passwordcocorich";
 $mail->SMTPSecure = "tls";                           
 $mail->Port = 587;                                   
 $mail->From = "ask@cocorichindo.com";
-$mail->FromName = $name;
+$mail->FromName = $email;
 $mail->addAddress("info@cocorichindo.com", "Marcella Dharsono");
 $mail->isHTML(true);
 $mail->Subject = $subject;
-$mail->Body = $message;
+$mail->Body = $bodymessage;
 $mail->AltBody = "(This is the plain text version of the email content)";
 
 if(!$mail->send()) 
