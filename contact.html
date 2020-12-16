@@ -363,5 +363,20 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>
+    var form = document.getElementById('contactForm');
+    var cname = document.getElementById('cname');
+    var cemail = document.getElementById('cemail');
+    var cmessage = document.getElementById('cmessage');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var ecname = encodeURIComponent(cname.value);
+        var ecemail = encodeURIComponent(cemail.value);
+        var ecmessage = encodeURIComponent(cmessage.value);
+        var ctemplate = `Name:%20${ecname}%0AEmail:%20${ecemail}%0AMessage:%20${ecmessage}`;
+        url = 'https://wa.me/628991977077?text='+ctemplate;
+        window.location = new URL(url);
+    });
+    </script>
 </body>
 </html>
