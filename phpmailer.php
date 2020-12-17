@@ -53,7 +53,7 @@ $mail->SMTPSecure = "tls";
 $mail->Port = 587;                                   
 $mail->From = "ask@cocorichindo.com";
 $mail->FromName = $name;
-$mail->addAddress("michael@cocorichindo.com", "Marchella Darsono");
+$mail->addAddress("info@cocorichindo.com", "Marchella Darsono");
 $mail->isHTML(true);
 $mail->Subject = $subject;
 $mail->Body = $bodymessage;
